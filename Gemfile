@@ -37,6 +37,15 @@ group :development do
   gem "meta_request"
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'capistrano'
+  gem 'capistrano-sidekiq', '0.5.3'
+  gem 'capistrano-rails-console'
+  # rails specific capistrano funcitons
+  gem 'capistrano-rails'
+  # integrate bundler with capistrano
+  gem 'capistrano-bundler'
+  # if you are using RBENV
+  gem 'capistrano-rbenv'
 end
 
 group :staging, :production do
