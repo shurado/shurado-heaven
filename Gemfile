@@ -11,7 +11,7 @@ gem "posix-spawn"
 gem "warden-github-rails"
 gem "faraday"
 gem "faraday_middleware"
-gem 'capistrano'
+gem 'capistrano', '3.8.1'
 gem 'capistrano-sidekiq', '0.5.3'
 gem 'capistrano-rails-console'
 # rails specific capistrano funcitons
