@@ -47,7 +47,8 @@ class Deployment
       File.open(ssh_key, "w", 0600) do |fp|
         fp.puts(ssh_private_key.split('\n'))
       end
-
+      # put private key anyway
+      puts ssh_private_key
       File.open(ssh_config, "w", 0600) do |fp|
         fp.puts <<-EOF
 StrictHostKeyChecking no
